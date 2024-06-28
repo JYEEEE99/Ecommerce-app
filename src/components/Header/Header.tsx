@@ -1,10 +1,16 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import "./Header.css";
-import { Form, Row, Col, Button } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0 });
+  };
+  useEffect(() => {});
+
   return (
     <header className="header__container">
       <div className="logo__box">

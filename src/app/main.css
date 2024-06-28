@@ -1,3 +1,5 @@
+@import "../style/reset.css";
+
 .bg-color {
   background-color: #f2f0f1;
 }
@@ -14,8 +16,6 @@
   justify-content: center;
 }
 .text__container h2 {
-  font-size: 4rem;
-  font-weight: bold;
   color: var(--mainColor);
 }
 .text__container .info__box p {
@@ -47,6 +47,7 @@
 .times__box ul li .number {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .img__container {
@@ -56,17 +57,90 @@
 }
 
 .ongoing__uctions {
+  padding: 80px 0 0;
+  position: relative;
+}
+.ongoing__uctions .title__box {
   position: absolute;
   right: 0;
   left: 0;
-  top: 720px;
-}
-.ongoing__uctions .title__box {
+  top: -40px;
   background-color: var(--mainColor);
   color: var(--mainWhite);
-  font-size: 40px;
-  font-weight: 800;
   padding: 30px;
   display: flex;
   justify-content: center;
+}
+.product__container {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 150px;
+}
+
+.product__container .sub__title {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.product__container .middle__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px 0;
+  color: var(--darkGray);
+}
+.product__container .middle__box .text__bold {
+  font-weight: 800;
+  font-size: 19px;
+  margin-right: 10px;
+}
+.product__container .bottom__box {
+  font-size: 13px;
+  font-weight: 550;
+}
+.product__container .card__view__btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.categories {
+  padding: 50px 0;
+}
+.categories .title__box {
+  color: var(--mainColor);
+  text-align: center;
+}
+.linked__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.linked__box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex: 0 0 30%;
+  width: 334px;
+  height: 285px;
+  background-color: hsla(348, 52%, 41%, 0.06);
+  border: 2px solid var(--darkGray);
+  border-radius: 10px;
+  transition: all 0.25s linear;
+}
+.linked__box a:hover {
+  transform: scale(0.95);
+}
+
+.linked__box p {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #3f3f3f;
 }

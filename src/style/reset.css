@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
 html,
 body,
 div,
@@ -128,7 +134,7 @@ table {
   --fontColor: #333;
   --darkGray: rgba(0, 0, 0, 0.6);
 }
-button {
-  border: none;
-  cursor: pointer;
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
 }
