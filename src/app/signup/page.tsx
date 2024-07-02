@@ -10,21 +10,10 @@ import FormInput from "@/components/FormInput/FormInput";
 import { AccountButton, MainButton } from "@/style/Button.styles";
 import { FormIcon } from "@/style/Icon.style";
 
-interface userInfoProps {
-  email: string;
-  password: string;
-  confirmPassword: string;
-}
-
-const Signup: React.FC<userInfoProps> = ({
-  email,
-  password,
-  confirmPassword,
-}) => {
-  const [userEmail, setUserEmail] = useState(email);
-  const [userPassword, setUserPassword] = useState(password);
-  const [userConfirmPassword, setUserConfirmPassword] =
-    useState(confirmPassword);
+const Signup: React.FC = ({}) => {
+  const [userEmail, setUserEmail] = useState<string>("");
+  const [userPassword, setUserPassword] = useState<string>("");
+  const [userConfirmPassword, setUserConfirmPassword] = useState<string>("");
 
   const emailOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserEmail(e.target.value);
