@@ -42,7 +42,7 @@ const Header = () => {
           </Form>
         </div>
         <div className="icon__box">
-          <a href="/login">
+          <a href="/">
             <Image
               src="/images/header-heart.png"
               alt="header-profile"
@@ -51,7 +51,7 @@ const Header = () => {
               height={20}
             />
           </a>
-          <a href="/login">
+          <a href="/signup">
             <Image
               src="/images/header-profile.png"
               alt="header-profile"
