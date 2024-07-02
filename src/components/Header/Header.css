@@ -1,8 +1,11 @@
 @import "../../style/reset.css";
 
+.header__bg {
+  background-color: #fff;
+}
 .header__container {
   width: 1240px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

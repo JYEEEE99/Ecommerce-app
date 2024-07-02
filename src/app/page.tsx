@@ -5,7 +5,7 @@ import Image from "next/image";
 import { MainButton } from "@/style/Button.styles";
 import { ProductCard, ProductCardImg } from "@/style/ProductCard.styles";
 import { LayoutBox } from "@/style/LayoutBox.styles";
-import { CategoriesIcon } from "@/style/CategoriesIcon.style";
+import { CategoriesIcon } from "@/style/Icon.style";
 import Link from "next/link";
 
 const HomePage: React.FC = () => {
@@ -25,9 +25,6 @@ const HomePage: React.FC = () => {
     "Camera",
     "SmartWatch",
   ];
-
-  console.log();
-
   return (
     <main>
       <div className="bg-color">

@@ -21,3 +21,11 @@ export const MainButton = styled.button`
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
   }
 `;
+
+export const AccountButton = styled(MainButton)`
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 320px;
+  font-size: 0.8rem;
+  padding: 15px;
+  height: auto;
+`;
